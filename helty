@@ -1,0 +1,6 @@
+#!/bin/sh
+# Starts HeltyShell. Usage: ./helty [options] [command]
+# Looks for helty_shell.py in this script's folder, from whatever directory it is run.
+# exec replaces the shell with Python: signals and exit code go straight to the caller.
+DIR="$(cd "$(dirname "$0")" && pwd)"
+exec python3 "$DIR/helty_shell.py" "$@"

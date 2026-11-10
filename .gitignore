@@ -1,0 +1,11 @@
+# Files created by the shell while in use
+.helty_state.json
+.helty_history
+helty_writes.log
+
+# Python
+__pycache__/
+*.pyc
+
+# macOS Finder metadata
+.DS_Store
